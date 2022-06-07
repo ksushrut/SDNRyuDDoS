@@ -1,0 +1,2 @@
+curl -X GET http://localhost:8080/stats/tablefeatures/1
+curl -X GET http://localhost:8080/stats/aggregateflow/1
