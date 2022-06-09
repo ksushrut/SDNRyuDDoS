@@ -26,14 +26,16 @@ Files in ddos:
 15. svm.py: SVM to classify into attack or not an attack.
 
 Steps to run:
-Paste the ddosfolder in ryu folder.
+Paste the ddos folder in the ryu folder.
 Terminal 1: ryu-manager doos/customCtrl.py ryu.app.ofctl_rest
 Terminal 2: cd ddos and then sudo python topo.py
 Terminal 3: cd ddos and source collect.sh
 
 *Make sure that the scores of host in score.txt are 100*
+
 To generate normal traffic, in Terminal 2: <host> source gentraffic.sh    eg: h2 source gentraffic.sh
 For ddos attack, in Terminal 2: <host> hping3 --rand-source --flood <target ip>     eg: h2 hping3 --rand-source --flood 10.0.0.1
 
-In Terminal 4: sudo python app1.py      For API access
+For API access
+In Terminal 4: sudo python app1.py      
 
