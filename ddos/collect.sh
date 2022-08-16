@@ -3,9 +3,9 @@ n=6    # number of switches
 h=9
 port=1
 threshold=80
-python create.py "${h}"
-i=1 
-l=`python read.py`
+python create.py "${h}"	#create.py is used to create counter.txt which keeps count of the no of times an attack has occured and which is the attacker
+i=1 #iterating variable
+l=`python read.py`	#read from counte.txt
 
 scores=$(echo $l | tr ";" "\n")
 IFS=','
